@@ -1,0 +1,272 @@
+#body_compte {
+    background: url(../images/bgcompte.gif);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+	padding-top: 80px;
+}
+
+/* Contenu */
+
+#body_compte #max-width {
+    width: 70%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.profil .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contenu_compte #img-profil {
+    height: 25vh;
+    width: 25vh;
+    object-fit: cover;
+    border: 2px outset black;
+    margin-top: 30px;
+}
+
+.name-likes{
+    width: 100%;
+    display: flex;  
+    justify-content: center;  
+    align-items: center;
+}
+.name-likes p{
+    display: inline-block;
+    color: white;
+    font-size: 5vh;
+    margin: 2vh 4vh;
+    padding: 0 1vh;
+    border-radius: 1vh;
+    backdrop-filter: blur(15px);
+}
+
+#body_compte .bio .centre, #contenu_compte .title {
+    width: 50%;
+    margin: 1vh auto;
+    font-size: 3vh;
+    text-align: center;
+	font-family: Lemon Milk;
+}
+
+#contenu_compte .title {
+    margin-top: 5vh;
+    color: white;
+	font-family: Lemon Milk;
+}
+
+#body_compte .hide {
+    vertical-align: middle;
+    margin-left: 50px;
+}
+
+#body_compte #likes-icon {
+    width: 3.8vh;
+    height: 3.8vh;
+    margin-left: -3vh;
+}
+
+#body_compte .bio .textarea{
+    height: 20vh;
+    width: 100%;
+}
+
+#body_compte .bio .textarea ::-webkit-scrollbar {
+    display: none;
+}
+
+#body_compte .bio .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    outline: none;
+    padding: 0 2vh;
+    padding-top: 1vh;
+    font-size: 3vh;
+    font-family: 'Poppins', sans-serif;
+    resize: none;
+    color: black;
+    background: white;
+    display: disabled;
+    text-emphasis: none;
+}
+
+#body_compte .galerie .centre{
+    width: 100%;
+    display: flex;  
+    justify-content: center;  
+    align-items: center;
+}
+
+#body_compte .galerie .centre a{
+    display: inline-block;
+    margin: 50px;
+    border-radius: 6px;
+}
+
+.galerie .bloc{
+    align-items: center;
+    background: black;
+    color: gold;
+    cursor: pointer;
+    font-family: Exo;
+    font-size: 130%;
+    justify-content: center;
+    overflow: hidden;
+    /* height: 100%; */
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.galerie .bloc img{
+	height: 100%;
+}
+
+.column1 form{
+	width: 30vh;
+    height: 33vh;
+    margin: 2vh 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column1 form .gal-texte{
+	    font-size: 20px;
+    background: black;
+    color: gold;
+    min-height: 3.5vh;
+    text-align: center;
+	width: 100%;
+	overflow: hidden;
+	display: block;
+    padding: 0px 15px 5px 15px; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.column2 form{
+	width: 30vh;
+    height: 33vh;
+    margin: 2vh 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column2 form .gal-texte{
+	    font-size: 20px;
+    background: black;
+    color: gold;
+    min-height: 3.5vh;
+    text-align: center;
+	width: 100%;
+	overflow: hidden;
+	display: block;
+    padding: 0px 15px 5px 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.column3 form{
+	width: 30vh;
+    height: 33vh;
+    margin: 2vh 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column3 form .gal-texte{
+	    font-size: 20px;
+    background: black;
+    color: gold;
+    min-height: 3.5vh;
+    text-align: center;
+	width: 100%;
+	overflow: hidden;
+	display: block;
+    padding: 0px 15px 5px 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.edit-save{
+    width: 50%;
+    margin: 1vh auto;
+    font-size: 3vh;
+    text-align: left;
+}
+
+.compt-deco{
+    position: relative;
+	font-family: Exo;
+	margin-top: 20px;
+	margin-bottom: 20px;
+    padding: 1vh;
+	display: flex;
+    justify-content: center;
+}
+
+.compt-deco a{
+    position: relative;
+    color: white;
+    background: black;
+    border: 1px solid white;
+    border-radius: 1vh;
+    padding: 1vh;
+	font-family: Exo;
+}
+
+.compt-deco a:hover{
+    background: lightgray;
+    color: black;
+}
+
+.hide1, .hide2, .hide3, .visible1, .visible2, .visible3{
+    position: absolute;
+    width: 3vh;
+    height: 3vh;
+    margin: 5px 20px;
+}
+
+#body_compte .title{
+	display: flex;
+	justify-content: center;
+	font-family: Lemon Milk;
+}
+
+#body_compte #editname{
+	padding: 12px 20px;
+	font-size: 1rem;
+	border-width: 0;
+	border-radius: 25px;
+	text-align: center;
+	outline: transparent;
+	transition: border-color calc(var(--transition, 0.2) * 1s) ease;
+}
+
+#body_compte #name-likes p{
+
+	font-family: Exo;
+}
+
+.title-galerie, label, .galerie .bloc input:hover, .edit, .save{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nom-galerie{
+    color: greenyellow;
+}

@@ -1,0 +1,528 @@
+#body_exp{
+	background-image: url(../images/bgExplorer.gif);
+	background-attachment: scroll;
+	height: 100vh;
+    padding-top: 80px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#body_exp #barre_de_recherche{
+	position:absolute;
+	border-radius:10px;
+	margin-top:0px;
+}
+
+#body_exp #corps{
+	margin-top:60px;
+	margin-left:20px;
+}
+
+#body_exp #contenu_exp{
+	background-image: url("");
+	position: relative;
+	width: 100%;
+	text-align: left;
+	font-family: Arial;
+	left: 0;
+	top: 0;
+	margin: 0;
+	color: black;
+	height: calc(100vh - 115px);
+}
+
+#body_exp .boite{
+	width:45vw;
+	height: calc(60vh + 30px);
+	margin: 5vh 0 5vh 6vh;
+	
+	overflow-x:hidden;
+	overflow-y:hidden;
+	padding-left:3vh;
+}
+
+#body_exp #galerie-univers,
+#body_exp #galerie-scenarii{
+	width:20vw;
+	text-align:center;
+	border:1px solid;
+	border-radius: 1vh;
+	font-size:20px;
+	padding:0px 1vw;
+	margin: auto;
+	background:black;
+	color: white;
+}
+
+#body_exp .univers{
+	display: flex;
+	flex-direction:row;
+	height:calc(100vh - 40vh);
+	flex-wrap:wrap;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	align-items: center;
+	justify-content: center;
+}
+
+#body_exp .univers::-webkit-scrollbar,
+#body_exp .view-univ .arrangement-listes-univ ul::-webkit-scrollbar {
+    width: 10px;
+}
+
+#body_exp .univers,
+#body_exp .view-univ .arrangement-listes-univ ul {
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+#body_exp .univers::-webkit-scrollbar-track,
+#body_exp .view-univ .arrangement-listes-univ ul::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+
+#body_exp .univers::-webkit-scrollbar-thumb,
+#body_exp .view-univ .arrangement-listes-univ ul::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border: 1px solid var(--scrollbarBG);
+}
+
+#body_exp .univers-item,
+#body_exp .scenarii-item{
+	background: rgba(151, 151, 151, 0.5);
+	color: black;
+	font-size: 16px;
+	text-align: center;
+	width: 215px; /*1/2*/
+	height: 215px; /*1/2*/
+	line-height:120px;
+	font-size:40px;
+	border:1px solid;
+	margin: 15px 5px 0 5px; /*1/2*/
+	justify-content: center;
+    display: flex;
+    overflow: hidden;
+}
+
+#body_exp #texte{
+	text-align: left;
+	border: 1px black solid;
+	width: 215px;
+	font-size: 20px;
+	background:black;
+	color:gold;
+	text-align: center;
+	margin: 0 5px 15px 5px; /*2/2*/
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+	display: block;
+    padding: 0 15px 0;
+}
+
+#body_exp .scenarii{
+	display: flex;
+	flex-direction:row;
+	height:calc(100vh - 280px);
+	flex-wrap:wrap;
+	overflow:scroll;
+	overflow-x:hidden;
+}
+
+#body_exp .img-univ,
+#body_exp .img-scenar {
+	height: 100%; /*2/2*/
+	border: 1px;
+}
+
+#body_exp .scenarii-item:hover,
+#body_exp .univers-item:hover{
+	filter: brightness(50%);
+}
+
+#body_exp .box {
+    position: absolute;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 110vh;
+	height: 70vh; /*1/2 W-H*/
+    color: white;
+	overflow:scroll;
+	overflow-x:hidden;
+	background: rgba(0, 0, 0, 0.8);
+	box-sizing: border-box;
+	box-shadow: 0 20px 50px rgb(23, 32, 90);
+	border: 2px solid #2a3cad;
+	padding: 20px;
+	z-index:1000;
+}
+.box .view-univ {
+	position: relative;
+}
+.box .spanTB,
+.box .spanLR {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+}
+.box .spanTB {
+    height: 100%;
+}
+.box .spanLR {
+    height: calc(100% + 39vh); /*2/2 +=*/
+}
+.box span:nth-child(1) {
+	transform:rotate(0deg);
+}
+.box span:nth-child(4) {
+	transform:rotate(90deg);
+}
+.box span:nth-child(3) {
+	transform:rotate(180deg);
+}
+.box span:nth-child(2) {
+	transform:rotate(270deg);
+}
+.box span:before {
+	content: '';
+	position: absolute;
+	width:100%;
+	height: 2px;
+	background: #50dfdb;
+	animation: animate 4s linear infinite;
+}
+@keyframes animate {
+	0% {
+	transform:scaleX(0);
+	transform-origin: left;
+	}
+	50%
+	{
+	  transform:scaleX(1);
+	transform-origin: left;
+	}
+	50.1%
+	{
+	  transform:scaleX(1);
+	transform-origin: right;
+	  
+	}
+	
+	100%
+	{
+	  transform:scaleX(0);
+	transform-origin: right;
+	}
+}
+
+html {
+    --scrollbarBG: white;
+    --thumbBG: black;
+}
+
+#body_exp .box::-webkit-scrollbar,
+#arrangement-listes-univ::-webkit-scrollbar {
+    width: 10px;
+}
+
+#body_exp .box {
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+#body_exp .box::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+
+#body_exp .box::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border: 1px solid var(--scrollbarBG);
+}
+
+#body_exp .view-univ .title-univ {
+	font-family: Lemon Milk;
+    margin-top: 5vh;
+    margin-left: 20%;
+    font-size: 400%;
+}
+
+#body_exp .view-univ .profil-univ{
+	margin-top:4vh;
+}
+
+#body_exp .view-univ .profil-univ li, 
+#body_exp .view-univ .races-univ li,
+#body_exp .view-univ .caracteristiques-univ li,
+#body_exp .view-univ .classes-univ li,
+#body_exp .view-univ .objets-univ li,
+#body_exp .view-univ .bestiaire-univ li,
+#body_exp .view-univ .des-univ li{
+	font-family: Exo;
+	border:2px solid white;
+	border-radius:20px;
+	padding:1vh 1vw;
+	width:15vw;
+	height:200px;
+	list-style: none;
+	margin: 2vh 5vh auto;
+}
+
+#body_exp .view-univ .profil-univ li p, 
+#body_exp .view-univ .races-univ li p,
+#body_exp .view-univ .caracteristiques-univ li p,
+#body_exp .view-univ .classes-univ li p,
+#body_exp .view-univ .objets-univ li p,
+#body_exp .view-univ .bestiaire-univ li p,
+#body_exp .view-univ .des-univ li p{
+	border-bottom:2px solid white;
+	padding-bottom:2px;
+}
+
+#body_exp .view-univ .profil-univ li img, 
+#body_exp .view-univ .races-univ li img,
+#body_exp .view-univ .caracteristiques-univ li img,
+#body_exp .view-univ .classes-univ li img,
+#body_exp .view-univ .objets-univ li img,
+#body_exp .view-univ .bestiaire-univ li img,
+#body_exp .view-univ .des-univ li img{
+	width:100%;
+	height:165px;
+}
+
+#body_exp .view-univ .profil-univ, 
+#body_exp .view-univ .races-univ,
+#body_exp .view-univ .caracteristiques-univ,
+#body_exp .view-univ .classes-univ,
+#body_exp .view-univ .objets-univ,
+#body_exp .view-univ .bestiaire-univ,
+#body_exp .view-univ .des-univ{
+	border:2px solid white;
+}
+
+#body_exp .view-univ .arrangement-listes-univ,
+#body_exp .view-univ .arrangement-listes-univ2{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#body_exp .view-univ .arrangement-listes-univ ul,
+#body_exp .view-univ .arrangement-listes-univ2 ul{
+	margin: 2vh;
+	padding: 2vh 1vh;
+	height: 41vh;
+	overflow-y: scroll;
+	border-right: none;
+	min-width: 22vw;
+}
+
+#body_exp .view-univ .title-carac {
+	text-align:center;
+	font-family: Exo;
+	margin-top: 3vh;
+	font-size:130%;
+}
+
+#body_exp .view-univ .carac-univ {
+	margin-top: 4vh;
+	display:flex;
+}
+
+#body_exp .view-univ .carac-univ li {
+	font-family: Exo;
+	border:2px solid white;
+	border-radius:10px;
+	margin: 1vh 3vw 0 2vw;
+	padding: 1vh 1vw;
+	width:12vw;
+}
+
+#body_exp .view-univ .tag-univ {
+    margin-top: 3vh;
+    margin-left: 7vh;
+    font-size: 130%;
+	display:flex;
+}
+
+#body_exp .view-univ .tag-univ li {
+	font-family: Exo;
+    display: inline;
+    text-align: center;
+    margin: 0 1vh;
+}
+
+#body_exp .view-univ .info-univ {
+	position: relative;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 10vh;
+}
+
+#body_exp .view-univ .info-univ li {
+	height: 10vh;
+	list-style: none;
+	margin-right: 20px;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+#createur {
+	position: absolute;
+	left: 50%;
+}
+
+#body_exp .view-univ .info-univ img{
+	width: 5vh;
+	height: 5vh;
+}
+
+#body_exp .view-univ .info-univ a {
+    background: #2a3cad;
+    padding: 0.5vh 2vh;
+    border-radius: 6px;
+    border: 2px solid white;
+    cursor: pointer;
+	color: white;
+	font-size: 130%;
+}
+
+#formlike2,
+#formfav2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.floatright {
+	float: right;
+}
+
+#body_exp .view-univ .info-univ a:hover {
+    background: white;
+    color: #2a3cad;
+    padding: 0.5vh 2vh;
+    border-radius: 6px;
+    border: 2px solid #2a3cad;
+    transition: 0.3s ease;
+}
+
+#body_exp .view-univ .info-univ input {
+    background: #2a3cad;
+	font-family: Exo;
+    padding: 0.5vh 2vh;
+    border-radius: 6px;
+    border: 2px solid white;
+    cursor: pointer;
+	color: white;
+	margin-right:3.5vw;
+	margin-left:3vw;
+	font-size: 130%;
+}
+
+#body_exp .view-univ .info-univ input:hover {
+    background: white;
+	font-family: Exo;	
+    color: #2a3cad;
+    padding: 0.5vh 2vh;
+    border-radius: 6px;
+    border: 2px solid #2a3cad;
+    transition: 0.3s ease;
+}
+
+#body_exp .view-univ .etapes-univ {
+	margin-top:8vh;
+}
+
+#body_exp .view-univ .etapes-univ h1{
+	font-family: Exo;
+    margin-top: 5vh;
+    margin-left: 5vh;
+    font-size: 180%;
+}
+
+#body_exp .view-univ .etapes-univ h2{
+	font-family: Exo;
+    margin-top: 3vh;
+    margin-left: 3vh;
+    font-size: 130%;
+}
+
+#body_exp .view-univ .etapes-univ li{
+	font-family: Exo;
+    margin-top: 2vh;
+    margin-left: 2vh;
+    font-size: 130%;
+	list-style:none;
+}
+
+#body_exp .view-univ .etapes-univ p{
+	border: 0.5vh white double;
+	font-family: Exo;
+    margin-left: 5vh;
+	margin-right: 2vh;
+    line-height: 3vh;
+	padding:2vh;
+	filter: drop-shadow(0 0 0.30rem white);
+}
+#body_exp .view-univ .etapes-univ div{
+	border:0.5vh white solid;
+	padding:0 2vh 4vh 0;
+	margin: 2vh 2vh 0 3vh;
+    line-height: 3vh;
+}
+
+#body_exp .view-univ .disc-univ li{
+	font-family: Exo;
+    margin-top: 5vh;
+    margin-left: 5vh;
+    font-size: 130%;
+	list-style:none;
+}
+
+#body_exp .view-univ .disc-univ h1{
+	font-family: Exo;
+    margin-top: 5vh;
+    margin-left: 5vh;
+    font-size: 130%;
+}
+
+#body_exp .view-univ .disc-univ div{
+	font-size:200%;
+}
+
+#body_exp .view-univ .disc-univ p {
+	border: 0.5vh white double;
+	font-family: Exo;
+    margin-top: 2vh;
+    margin-left: 2vh;
+	margin-right: 2vh;
+    line-height: 3vh;
+	padding:2vh;
+	filter: drop-shadow(0 0 0.30rem white);
+}
+
+
+
+#body_exp .view-univ .tag-univ li{
+	color:#9fc5e8;
+}
+
+.caract{
+	cursor: pointer;
+}
+
+#un_univers h1{
+	margin:5vh 38vw;
+	width: 100%;
+	font-size: 350%;
+}

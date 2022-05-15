@@ -1,0 +1,274 @@
+#body_jeu {
+	height: 100vh;
+	padding-top: 80px;
+	user-select: auto;
+    -khtml-user-select: auto;
+    -o-user-select: auto;
+    -moz-user-select: -moz-auto;
+    -webkit-user-select: auto;
+}
+
+#contenu_jeu {
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	font-family: Arial;
+	left: 0;
+	top: 0;
+	margin: 0;
+	color: black;
+	z-index: 1;
+	overflow: hidden;
+}
+
+#timeline {
+	background-color: #B22222;
+	font-family: Exo;
+	height: 10%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 2vw 0 2vw;
+	z-index: 15;
+}
+
+#timeline span {
+	height: -webkit-fill-available;
+	display: flex;
+	/*flex-direction: column;*/
+	justify-content: center;
+	overflow: visible;
+	background-color: #ffff00;
+}
+
+#timeline #line {
+	height: 5%;
+	background-color: black;
+	display: inherit;
+}
+
+/* Tooltip text */
+#contenu_jeu .tooltip .tooltiptext {
+    display: none;
+    max-width: 25vw;
+	height: auto;
+    max-height: 40vh;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 10;
+	top: 71%;
+}
+
+#contenu_jeu .toolarrow {
+	width: 20px;
+	position: absolute;
+	top: -11%;
+	z-index: 5;
+	left: 51%;
+}
+
+#gametable ul {
+	font-family: Exo;
+	z-index: 5;
+	display: flex;
+	justify-content: space-around;
+}
+
+#gametable ul li {
+	font-family: Exo;
+	display: inline;
+	float: left;
+	width: max-content;
+	text-align: center;
+	padding: 0;
+}
+
+#gametable ul li.selected {
+	border-bottom: 1px solid #fff;
+	background-color: #fff;
+}
+
+#gametable ul li a:hover {
+	color: #000;
+	font-weight: bold;
+	background-color: #fff;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+#contenu_jeu .tooltip:hover .tooltiptext {
+    display: inline;
+}
+
+#actiontable {
+	font-family: Exo;
+	text-align: center;
+	height: 90%;
+	position: relative;
+	z-index: 10;
+	background-image: url("../images/bg-jouer-left.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#contenu_jeu .contenu_onglet{
+    overflow-y: scroll;
+	color: black;
+	padding-top: 30px;
+}
+
+#contenu_jeu .contenu_onglet::-webkit-scrollbar {
+  display: none;
+}
+
+#contenu_onglet_dice select, #contenu_onglet_dice input {
+	font-size: 24px;
+}
+
+.contenu_onglet h1{
+	margin-bottom: 30px;
+	font-size: 40px;
+	box-shadow: 0px 0px 5px 2px #45818e;
+}
+
+#contenu_onglet_dice li{
+	margin-bottom: 20px;
+}
+
+#contenu_jeu #gamedisp {
+	background-image: url("../images/map.jpg");
+	background-size: contain;
+	border:1px solid gray;
+	padding:0;
+	margin:0;
+	left:51vw;
+	top:27vh;
+	border:none;
+	position: absolute;
+	width: 50vh;
+	height: 50vh;
+	z-index: 0;
+}
+
+#contenu_jeu #pop-up {
+	visibility: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width:100%;
+	height:100%;
+	text-align:center;
+	z-index: 1000;
+}
+
+#contenu_jeu #pop-up a {
+	margin-left: 300px;
+}
+
+#contenu_jeu #pop-up img {
+	width: 20px;
+	height: 20px;
+}
+
+#contenu_jeu #pop-up div {
+	width: 350px;
+	margin: 100px 10px;
+	background-color: #f2f2f2;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius:  10px;
+	border: 1px solid #666666;
+	padding: 15px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	border: 3px solid #cccccc;
+	position: absolute;
+	left: 50%;
+	top: 0vh;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+
+#contenu_jeu svg {
+	max-width: 100%;
+	max-height: 50%;
+	overflow: inherit;
+}
+
+#contenu_jeu .onglet {
+	display: inline-block;
+	cursor: pointer;
+	font-family: Exo;
+	display: inline;
+	float: left;
+	width: 70px;
+	text-align: center;
+	border: 1px solid black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #88AEB7;
+	filter: brightness(1.5);
+}
+#contenu_jeu .onglet:hover {
+	border: 1px solid white;
+	background-color: #88AEB7;
+}
+
+#contenu_jeu .contenu_onglet {
+	display:none;
+}
+
+#visualgame {
+	width: 100%;
+	height: 90%;
+	z-index: 0;
+}
+.bg-jouer {
+	/* The image used */
+	background-image: url("../images/bg-jouer.jpg");
+  
+	filter: brightness(40%);
+	border: 5px white solid;
+  
+	/* Full height */
+	height: 100%;
+  
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+
+#gameface {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.jetonJ{
+	top: 30vh;
+	left: 45vw;
+	width: 30px;
+	background-color: white;
+	border: 5px solid royalblue;
+	border-radius: 20px;
+    position: absolute;
+    text-align: center;
+	user-select: none;
+	z-index: 10;
+}
+.icon {
+	padding: 3px;
+}
+svg {
+	z-index: 1;
+}

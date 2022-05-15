@@ -1,0 +1,313 @@
+@font-face {
+font-family: "Exo";
+src: url("font/Exo-VariableFont_wght.ttf");
+}
+*{
+margin:0;
+font-family: Exo;
+}
+
+
+
+#contenu_creuniv {
+    background-image: url("https://unidice.fr/images/blueprint_mais_gris.png");
+		background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+		width: 100%;
+		height: auto;
+    text-align: left;
+    font-family: Arial;
+    margin: 0;
+    padding: 83px 0 0 0;
+    color: black;
+    position: relative;
+    overflow:hidden;
+}
+
+#contenu_creuniv_cadre{
+  width: 1000px;
+  min-height: 1100px;
+background-color: rgba(188, 188, 188, 0.7);
+  border: 1px solid black;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+#contenu_creuniv_form{
+  width: 800px;
+  height: auto;
+background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid black;
+  margin: 50px auto;
+  display: flex;
+  padding: 10px;
+}
+
+#contenu_creuniv_form #nom{
+  margin: 50px 10px ;
+  width: 230px;
+  height: 20px;
+}
+
+#contenu_creuniv_form form{
+  width: 800px;
+}
+
+#contenu_creuniv_form #titre-avatar, #contenu_creuniv_form #titre-description{
+  margin: 10 150px;
+}
+
+#contenu_creuniv_form #nomEtImage{
+  display: flex;
+  width: 450px;
+  margin: 0 auto;
+}
+
+#contenu_creuniv_form .box{
+  margin: 10px;
+  width: 140px;
+  height: 40px;
+  border: 1px solid black;
+display: flex;
+    flex-direction: column;
+    align-items: center;
+  box-shadow: inset 0 0 10px black;
+overflow: hidden;
+padding-top: 10px;
+}
+
+
+#contenu_creuniv_form .box img{
+    object-fit: cover;
+    height: 100%;
+
+}
+
+#contenu_creuniv_form #droite{
+vertical-align:bottom;
+margin: 30px 0 0 0;
+}
+
+#contenu_creuniv_form #description{
+  width: 740px;
+  height: 280px;
+  min-width: 740px;
+  max-width: 740px;
+  min-height: 280px;
+  max-height: 280px;
+  margin: 10px 0;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px black;
+}
+
+#contenu_creuniv_form #description:hover {
+  background: rgb(206, 206, 206);
+}
+
+
+#contenu_creuniv_form #gauche, #contenu_creuniv_form #droite{
+  display: inline-block;
+}
+
+#contenu_creuniv_form #droite .droiteChoix{
+  height: 200px;
+}
+
+
+#contenu_creuniv_form li{
+  margin: 10px 0;
+  list-style: none;
+}
+
+#contenu_creuniv_form #caracteristiques{
+  width:100%;
+  display: block;
+  margin: 0;
+}
+
+#contenu_creuniv_form #titre-carac{
+  width: 160px;
+  margin: 0 auto;
+}
+
+#contenu_creuniv_form #caracteristiques table{
+  width: 900px;
+  margin: 50px auto;
+}
+
+#contenu_creuniv_form #caracteristiques table td{
+	height: 50px;
+}
+
+#contenu_creuniv_form #EnvoyerEtReset{
+  display: flex;
+  width: 200px;
+  margin: 50px auto;
+}
+
+
+#contenu_creuniv_form label{
+  font-size: 20px;
+}
+
+#contenu_creuniv_form .input{
+  height: 30px;
+  min-width: 100px;
+  border-radius: 20px;
+  padding: 5px;
+  background:#dcd560;
+}
+
+#contenu_creuniv_form .aligne{
+text-align: center;
+}
+
+#contenu_creuniv_form .input:hover {
+  background:  #e1dc8e  ;
+}
+
+/* Firefox */
+#contenu_creuniv_form input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Chrome */
+#contenu_creuniv_form input::-webkit-inner-spin-button,
+#contenu_creuniv_form input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin:0;
+}
+
+#contenu_creuniv_form #reset{
+  margin-right: 25px;
+  padding: 0 10px;
+}
+
+#contenu_creuniv_form #enregistrer{
+  margin-left: 25px;
+padding: 5px;
+}
+
+#contenu_creuniv_form #Attribuer{
+  margin: 10px 0 0 20px;
+}
+
+#contenu_creuniv_form h1{
+  width: 315px;
+  margin: 0 auto;
+  font-size: 40px;
+}
+
+
+
+#contenu_creuniv_form h2{
+  font-size: 20px;
+  width: 200px;
+  margin: 10px auto;
+}
+
+@import url('https://kodhus.com/kodhus-ui/kodhus-0.1.0.min.css');
+
+#contenu_creuniv_form .container {
+  width:750px;
+  margin: 10px 0;
+}
+
+.nomTag{
+user-select: none;
+}
+
+#contenu_creuniv_form .tag-container {
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 6px;
+  overflow-x: scroll;
+}
+#contenu_creuniv_form .tag-container .tag {
+  height: 30px;
+  margin: 5px;
+  padding: 5px 6px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  color: #333;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 1px 1px #fff;
+  cursor: default;
+}
+#contenu_creuniv_form .tag i {
+  font-size: 16px;
+  color: #666;
+  margin-left: 5px;
+  user-select: none;
+}
+#contenu_creuniv_form .tag-container input {
+  padding: 5px;
+  font-size: 16px;
+  border: 0;
+  outline: none;
+  font-family: 'Rubik';
+  color: #333;
+  flex: 1;
+}
+
+#contenu_creuniv_form .AddRemove{
+	padding: 10px;
+	border: 1px solid black;
+	background: black;
+  color: #dcd560;
+	width: 180px;
+	text-align: center;
+	user-select: none;
+  font-weight: bold;
+}
+
+#contenu_creuniv_form .AddRemove:hover{
+  color: black;
+  background: #dcd560;
+  transition: 0.5s;
+}
+
+#contenu_creuniv_form #listeDes, #contenu_creuniv_form #listeClasses, #contenu_creuniv_form #listeRaces, #contenu_creuniv_form #listeObjets, #contenu_creuniv_form #listeEtapes {
+display: flex;
+flex-wrap: wrap;
+}
+
+#contenu_creuniv_form #listeDes div, #contenu_creuniv_form #listeClasses div, #contenu_creuniv_form #listeRaces div, #contenu_creuniv_form #listeObjets div, #contenu_creuniv_form #listeEtapes div{
+margin: 20px;
+padding: 10px;
+display: flex;
+flex-direction: column;
+border: 1px solid black;
+box-shadow:  0 0 10px;
+}
+
+#contenu_creuniv_form #listeClasses img, #contenu_creuniv_form #listeRaces img, #contenu_creuniv_form #listeObjets img, #contenu_creuniv_form #listeEtapes img{
+margin-left: 300px;
+user-select: none;
+}
+
+#contenu_creuniv_form #listeDes img{
+  margin-left: 240px;
+  user-select: none;
+}
+
+#contenu_creuniv_form #listeDes input, #contenu_creuniv_form #listeClasses input, #contenu_creuniv_form #listeRaces input, #contenu_creuniv_form #listeObjets input, #contenu_creuniv_form #listeEtapes input{
+margin: 0 0 30px 0;
+}
+
+
+
+#contenu_creuniv_form textarea{
+resize: none;
+}

@@ -1,0 +1,301 @@
+*{
+	margin: 0;
+}
+
+#body_cre {
+	min-height: 100vh;
+}
+
+
+#contenu_cre {
+    background-image: url("https://unidice.fr/images/bgCreer.jpg");
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+	width: 100%;
+    text-align: left;
+    font-family: Arial;
+    margin: 0;
+    min-height: 100vh;
+    padding: 83px 0 0 0;
+    color: black;
+}
+
+#contenu_cre .titre{
+	border: solid 1px black;
+	border-radius: 5px;
+	background-color: grey;
+	margin: 10px auto;
+	width: 250px;
+	height: auto;
+	font-weight: 5;
+	text-align: center;
+	font-family: Lemon Milk Light;
+}
+
+
+#contenu_cre .form{
+	margin: 10px;
+}
+
+#contenu_cre #description{
+	min-width: 300px;
+	min-height: 80px;
+	width: 500px;
+	height: 150px;
+	max-width: 80%;
+	max-height: 200px;
+	font-size: 20px;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+#contenu_cre #name{
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 3px;
+}
+
+#contenu_cre  #nomUniv{
+	 width: 500px;
+	 margin-left: auto;
+	 margin-right: auto;
+ }
+
+#contenu_cre .titreEtBouton{
+	position: relative;
+	display: flex;
+}
+
+#contenu_cre .univ{
+	padding: 30px;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+#contenu_cre .titreuniv{
+	font-size: 42px;
+	margin: 0 150px 10px 0;
+}
+
+#contenu_cre .descuniv{
+	margin: 30px 50px 50px 0;
+	font-size: 20px;
+	text-align: justify;
+
+}
+
+#contenu_cre .boutonmodif{
+	position: absolute;
+	display: block;
+	right: 0;
+	top: -1vh;
+}
+
+#contenu_cre .boutonmodif a{
+	text-decoration: none;
+	color: black;
+}
+
+#contenu_cre .modifier,
+#contenu_cre .modifierD {
+	position: relative;
+	height: 40px;
+}
+
+#contenu_cre .modifier{
+	background-color: #a1a1a1;
+	border: 1px solid black;
+	border-radius: 20px;
+	display: flex;
+	margin: 0.5vh;
+}
+#contenu_cre .modifierG{
+	position: relative;
+	width: 40px;
+	height: 39px;
+	background-color: #676767;
+	border-radius: 20px 0 0 20px;
+}
+
+#contenu_cre .modifierG img{
+	width: 20px;
+	height: 20px;
+	position: relative;
+	display: flex;
+	margin: 25% 30%;
+}
+
+#contenu_cre .modifierD{
+	width: 80px;
+	display: flex;
+}
+
+#contenu_cre .modifierD p{
+	width: auto;
+	display: flex;
+	padding: 0;
+	margin: auto 10%;
+	font-family: Exo;
+	z-index: 20;
+}
+
+#contenu_cre .navig{
+	height: 100px;
+	width: 80vw;
+	/*margin: 50px 50px 20px 50px ;*/
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+#contenu_cre .navig a{
+	text-decoration: none;
+}
+
+#contenu_cre .bouton{
+	display: flex;
+	background-color: grey;
+	width: 150px;
+	height: 60px;
+	border-radius: 8px;
+	border: 1px solid black;
+	text-align: center;
+	font-family: Lemon Milk;
+	text-decoration: none;
+	color: black;
+	align-items: center;
+	margin: 10px auto;
+}
+
+#contenu_cre .return{
+	display: flex;
+	background-color: grey;
+	width: 150px;
+	height: 60px;
+	border-radius: 8px;
+	border: 1px solid black;
+	text-align: center;
+	font-family: Lemon Milk;
+	text-decoration: none;
+	color: black;
+	align-items: center;
+	padding: 0 0 0 35px;
+}
+
+#contenu_cre .return:hover{
+	font-size: 120%;
+	background-color: #a1a1a1;
+	color: white;
+	transition: 0.3s;
+}
+
+
+#contenu_cre .boutoninvisible{
+	display: block;
+	padding: 10px;
+	margin: 10px;
+	width: 150px;
+	height: 60px;
+	border-radius: 8px;
+}
+
+#contenu_cre .bouton:hover{
+	font-size: 120%;
+	background-color: #a1a1a1;
+	color: white;
+	transition: 0.3s;
+}
+
+#contenu_cre .bouton a{
+	text-decoration: none;
+	color: black;
+}
+
+#contenu_cre .bouton a:hover{
+	background-color: #646464;
+	color: #fff;
+	border-color: #fff;
+}
+
+#contenu_cre #addbtn{
+	background-color: #646464;
+    color: #000;
+    border-color: #fff;
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	position: fixed;
+    right: 20px;
+    bottom: 40px;
+}
+
+#contenu_cre .liste {
+	border: 1px solid black;
+	backdrop-filter: blur(10px);
+	margin-right: auto;
+	margin-left: auto;
+	width: 80%;
+	box-shadow: 
+	0 0 10vw 0vw #7476ff,
+	0 0  2vw  0.4vw #0408fb,
+	
+	inset 0 0 .5vw 0.2vw #7476ff,
+	inset 0 0 0.2vw 0.2vw #3134ff,
+	inset 0 0 0.25vw 0.2vw #0408fb;
+}
+
+#contenu_cre .liste ul{
+	margin: 7% 5%;
+}
+
+#contenu_cre .liste li{
+	list-style-type: none;
+	border: 1px solid black;
+}
+
+#contenu_cre #pop-up {
+	visibility: hidden;
+	position: relative;
+	margin-left: 85px;
+	margin-top: 3.75em;
+	width:100%;
+	height:100%;
+	text-align:center;
+	z-index: 1000;
+}
+
+#contenu_cre #pop-up a{
+	margin-left: 280px;
+
+}
+
+#contenu_cre #pop-up img{
+	width: 20px;
+	height: 20px;
+}
+
+#contenu_cre #pop-up div {
+	width:350px;
+	margin: 100px 10px;
+	background-color: #f2f2f2;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius:  10px;
+	border:1px solid #666666;
+	padding:15px;
+	text-align:center;
+	font-weight: bold;
+	font-size: 15px;
+	border: 3px solid #cccccc;
+	position: absolute;
+	left: 50%;
+	top: -36vh;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
