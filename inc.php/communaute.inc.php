@@ -1,11 +1,11 @@
 <?php
 	if(defined("constante")){
 			include("header.php");
-				echo '  <div class="parent">
-				  <div class="enfant" id="divA"></div>
-				  <div class="enfant" id="divB"></div>
+				echo '  <div class="commuparent">
+				  <div class="commuenfant" id="divA"></div>
+				  <div class="commuenfant" id="divB"></div>
 				  </div>
-				  <div class="divcontenu">
+				  <div class="commucontenu">
 				    <div class="conteneur">
 				      <div class="contenutext">
 				        <div class="fade">

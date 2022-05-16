@@ -1,144 +1,130 @@
-@font-face {
-font-family: "Exo";
-src: url("Exo-VariableFont_wght.ttf");
-}
-
-*{
-  margin: 0;
-  font-family: "Exo";
-  color: black;
-}
-.parent{
-width: 100vw;
-height: 100vh;
-position: fixed;
-}
-
-.enfant {
-	width: 100vw;
-}
-
-.divcontenu {
-	width: 80vw;
-	position: absolute;
-	top: 14vh;
-	left: 10vw;
-  margin-bottom: 14vh;
-}
-
-#divA {
-	padding-top: 7vh;
-	background: linear-gradient(#6188c1, #2f4b68);
-	height: 65%;
-}
-
-#divB {
-	background: #d6dada;
-	height: 35%;
-}
-
-
-.contenutext{
-  color: white;
-  font-size: 20px;
-  width: 80vw;
-  margin-top: 6vh;
-}
-
-.contenuzone{
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 15vh;
-}
-
-.contenuzone img {
-	width: 13vw;
-	height: auto;
-	margin: 0 auto;
-	border-radius: 22%;
-	transition: all 0.25s ease-out;
-	margin-top: 13vh;
-	margin-bottom: 5vh;
-}
-
-.contenuzone img:hover {
-  width: 14vw;
-  transition: all 0.25s ease-out;
-}
-
-#top-bar {
-	top: 0px;
-	left: 0px;
-	background: rgba(0, 0, 0, 0.8);
-	backdrop-filter: blur(15px);
-	height: 80px;
-	width: 100vw;
-	padding: 4px 20px;
-	font-size: 13px;
-	margin: 0;
-	text-align: center;
-	position: fixed;
-	z-index: 5;
-}
-
-.menu-btn {
-	position: absolute;
-	color: #fff;
-	margin: 20px;
-	cursor: pointer;
-}
-
-#logo {
-	height: 70%;
-	position: absolute;
-	top: 10px;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
-.fade {
-  -webkit-transition: all 1s;
-  transition: all 1s;
-  opacity: 0;
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
-}
-
-.fade.inview {
-  opacity: 1;
-  -webkit-transform: none;
-          transform: none;
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
-}
-
-h1{
-  margin-bottom: 20px;
-}
-
-.ImgEtDesc{
-  display: block;
-text-align: center;
-}
-
-#cri8{
-  	width: 13vw;
-  	height: auto;
-  	margin: 3vh auto;
-  	border-radius: 22%;
-  	transition: all 0.25s ease-out;
-  }
-
-  #cri8:hover {
-    width: 14vw;
-    transition: all 0.25s ease-out;
-	margin-bottom: 15vh;
-}
-
-#contact{
-  margin-bottom: 20vh;
-}
-
-i{
-  font-size:14px;
-}
+@font-face {font-family: "Exo";src: url("Exo-VariableFont_wght.ttf");}.commuparent{width: 100vw;height: 100vh;position: fixed;}.commuenfant {	width: 100vw;  margin: 0;  font-family: "Exo";  color: black;}
+
+.commucontenu {
+	width: 80vw;
+	position: absolute;
+	top: 14vh;
+	left: 10vw;
+  margin-bottom: 14vh;
+}
+
+#divA {
+	padding-top: 7vh;
+	background: linear-gradient(#6188c1, #2f4b68);
+	height: 65%;
+}
+
+#divB {
+	background: #d6dada;
+	height: 35%;
+}
+
+
+.contenutext{
+  color: black;
+  font-size: 20px;
+  width: 80vw;
+  margin-top: 6vh;
+}
+
+.contenuzone{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 15vh;
+}
+
+.contenuzone img {
+	width: 13vw;
+	height: auto;
+	margin: 0 auto;
+	border-radius: 22%;
+	transition: all 0.25s ease-out;
+	margin-top: 13vh;
+	margin-bottom: 5vh;
+}
+
+.contenuzone img:hover {
+  width: 14vw;
+  transition: all 0.25s ease-out;
+}
+
+#top-bar {
+	top: 0px;
+	left: 0px;
+	background: rgba(0, 0, 0, 0.8);
+	backdrop-filter: blur(15px);
+	height: 80px;
+	width: 100vw;
+	padding: 4px 20px;
+	font-size: 13px;
+	margin: 0;
+	text-align: center;
+	position: fixed;
+	z-index: 5;
+}
+
+.menu-btn {
+	position: absolute;
+	color: #fff;
+	margin: 20px;
+	cursor: pointer;
+}
+
+#logo {
+	height: 70%;
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.fade {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  opacity: 0;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+}
+
+.fade.inview {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.commucontenu h1{
+  margin-bottom: 20px;
+}
+
+.ImgEtDesc{
+  display: block;
+text-align: center;
+}
+
+#cri8{
+  	width: 13vw;
+  	height: auto;
+  	margin: 3vh auto;
+  	border-radius: 22%;
+  	transition: all 0.25s ease-out;
+  }
+
+  #cri8:hover {
+    width: 14vw;
+    transition: all 0.25s ease-out;
+	margin-bottom: 15vh;
+}
+
+.commucontenu #contact{
+  margin-bottom: 10vh;
+}.commucontenu #contact a{
+  color: #2f4b68;
+}.commucontenu #contact a:hover{
+  color: #6188c1;
+}
+
+.commucontenu i{
+  font-size:14px;
+}

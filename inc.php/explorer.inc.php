@@ -4,11 +4,15 @@ echo'<div id="body_exp">';
 		$_SESSION['currentuniv'] = $_POST['univers'];
 	}else if(isset($_GET) && isset($_GET['unid'])){
 		$_SESSION['currentuniv'] = $_GET['unid'];
+	}else{
+		unset($_SESSION['currentuniv']);
 	}
 	if(isset($_POST['scenario'])){
 		$_SESSION['currentscenar'] = $_POST['scenario'];
 	}else if(isset($_GET) && isset($_GET['sid'])){
 		$_SESSION['currentscenar'] = $_GET['sid'];
+	}else{
+		unset($_SESSION['currentscenar']);
 	}
 	include("header.php");
 	echo'	<div id="contenu_exp">
